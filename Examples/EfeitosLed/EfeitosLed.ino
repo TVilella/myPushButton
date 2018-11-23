@@ -21,9 +21,9 @@ void setup() {
 }
 
 void loop() {
-  botao1.button_loop();
-  botao2.button_loop();
-  botao3.button_loop();
+  botao1.lerBotao();
+  botao2.lerBotao();
+  botao3.lerBotao();
 
   if (botao1.pressed()) {
      contador++;
