@@ -1,11 +1,11 @@
-#ifndef PushButton_h
-#define PushButton_h
+#ifndef myPushButton_h
+#define myPushButton_h
 
 #include "Arduino.h"
 
-class PushButton {
+class myPushButton {
   public:
-    PushButton (byte pinBotao , int tempoDebounce = 200 );
+    myPushButton (byte pinBotao , int tempoDebounce = 200 );
     void lerBotao();
     bool pressed();
     bool unpressed();

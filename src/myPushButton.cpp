@@ -1,18 +1,18 @@
-#include "PushButton.h"
+#include "myPushButton.h"
 
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>
 #include "Arduino.h"
 
-PushButton::PushButton (byte pinBotao , int tempoDebounce){
+myPushButton::myPushButton (byte pinBotao , int tempoDebounce){
   pinMode( pinBotao , INPUT_PULLUP ); //Indicando modo do pino como input usando o resistor de pullup interno
   debounceBotao = millis();
   pino = pinBotao;
   tempo = tempoDebounce;
 }
 
-void PushButton::lerBotao() {
+void myPushButton::lerBotao() {
   estadoBotao = digitalRead(pino);
   apertado = false;
   soltado = false;
@@ -29,10 +29,10 @@ void PushButton::lerBotao() {
   estadoBotaoAnt = estadoBotao;
 }
 
-bool PushButton::pressed(){
+bool myPushButton::pressed(){
   return apertado;
 }
 
-bool PushButton::unpressed(){
+bool myPushButton::unpressed(){
   return soltado;
 }

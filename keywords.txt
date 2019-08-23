@@ -6,7 +6,7 @@
 # Datatypes (KEYWORD1) - Tipos de Dados
 #######################################
 
-PushButton	KEYWORD1
+myPushButton	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2) - Métodos e Funções
