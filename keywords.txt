@@ -14,7 +14,7 @@ myPushButton	KEYWORD1
 
 lerBotao	KEYWORD2
 pressed		KEYWORD2
-unpressed	KEYWORD2
+released	KEYWORD2
 
 #######################################
 # Constants (LITERAL1) - Constantes

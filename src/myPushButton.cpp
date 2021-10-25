@@ -15,17 +15,22 @@ myPushButton::myPushButton (byte pinBotao , int tempoDebounce){
 void myPushButton::lerBotao() {
   estadoBotao = digitalRead(pino);
   apertado = false;
-  soltado = false;
+  solto = false;
 
   if ( ( millis() - debounceBotao ) > tempo ){
     if (!estadoBotao && estadoBotaoAnt) {
       apertado = true;
       debounceBotao = millis();
     } else if (estadoBotao && !estadoBotaoAnt) {
-      soltado = true;
+      solto = true;
       debounceBotao = millis();
     }
   }
+  
+  if (estadoBotao && !estadoBotaoAnt) {
+         debounceBotao = millis();
+  }
+  
   estadoBotaoAnt = estadoBotao;
 }
 
@@ -33,6 +38,6 @@ bool myPushButton::pressed(){
   return apertado;
 }
 
-bool myPushButton::unpressed(){
-  return soltado;
+bool myPushButton::released(){
+  return solto;
 }

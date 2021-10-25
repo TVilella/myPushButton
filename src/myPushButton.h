@@ -5,16 +5,16 @@
 
 class myPushButton {
   public:
-    myPushButton (byte pinBotao , int tempoDebounce = 200 );
+    myPushButton (byte pinBotao , int tempoDebounce = 50 );
     void lerBotao();
     bool pressed();
-    bool unpressed();
+    bool released();
   private:
     unsigned long debounceBotao;
     bool estadoBotaoAnt = HIGH;
     bool estadoBotao;
     bool apertado;
-    bool soltado;
+    bool solto;
     byte pino;
     byte tempo;  
 };

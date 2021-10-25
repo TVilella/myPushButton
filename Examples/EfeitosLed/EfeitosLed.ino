@@ -1,12 +1,11 @@
 /*
  *  AUTOR:      Thiago Vilella
  *  YOUTUBE:    https://www.youtube.com/channel/UCpg7_v1Wtvp-XPj-vjh8igQ
- *  DAILYMOTION:  https://www.dailymotion.com/dm_2f470f25794e41f057a2fba895ff6f3c
  *  CURSO ARDUINO:  http://bit.ly/2ZhypC9
  *  CURSO ROBOTICA: http://bit.ly/2zjK9Eo
  *  COMPRE:     https://www.arducore.com.br/
  *  SKETCH:     EfeitosLed | Exemplo da biblioteca myPushButton.h
- *  VERSÃO:     1.0.1
+ *  VERSÃO:     1.0.2
  *  DATA:     22/08/2019
 */
 
